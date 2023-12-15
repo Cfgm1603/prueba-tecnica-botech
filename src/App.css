@@ -29,7 +29,7 @@ nav ul {
   display: flex;
 }
 nav ul li {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   list-style: none;
   margin: 0 10px;
   white-space: nowrap;
@@ -76,6 +76,15 @@ nav .menu span {
   display: none;
 }
 
+.log {
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #015e01;
+  padding: 0.5rem;
+  border-radius: 1.1rem;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
 @media (max-width: 950px) {
   nav img {
     width: 45vw;
@@ -113,6 +122,7 @@ nav .menu span {
   nav ul li a {
     margin: 0.2rem 0.5rem;
     background-color: #015e01;
+    border-radius: 10px;
 
   }
 
@@ -122,9 +132,7 @@ nav .menu span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-    
+
   }
 
   .header svg {
@@ -132,7 +140,17 @@ nav .menu span {
     position: relative;
     display: flex;
     cursor: pointer;
-    
-    
   }
+
+   .log{
+    border: #015e01;
+    
+    padding: 0;
+  }
+
+  .account{
+    border-color: #273dab;
+    border-style: groove;
+  }
+
 }

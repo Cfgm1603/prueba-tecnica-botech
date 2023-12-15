@@ -1,11 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import img from "../images/logo.png";
+import LoginButton from "./LoginButton";
+import LogoutButton from "./LogoutButton";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.matchMedia("(max-width: 767px)").matches);
+  
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.matchMedia("(max-width: 950px)").matches);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
+    
     <nav>
       <div className="header">
         <Link to="/">
@@ -43,7 +57,21 @@ const Navbar = () => {
           <Link to="/">Compañia</Link>
         </li>
         <li>
-          <Link to="/">Login</Link>
+          {isMobile ? (
+            <>
+            <a className="account">
+                <LogoutButton className={menuOpen ? "" : "log"} />
+                <LoginButton className={menuOpen ? "" : "log"} />
+            </a>
+            </>
+            
+          ) : (
+            <>
+              <LogoutButton className={menuOpen ? "" : "log"} />
+              <LoginButton className={menuOpen ? "" : "log"} />
+            </>
+            
+          )}
         </li>
         <li>
           <Link to="/">Comunicate con ventas</Link>
