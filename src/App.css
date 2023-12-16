@@ -7,6 +7,77 @@
   justify-content: center;
 }
 
+
+.container-page-right{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  width: 80%;
+}
+
+.container-page-left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+
+.title-block {
+  float: right;
+  background-color: rgba(87, 128, 36, 255);
+  border-radius: 15px;
+  width: 95.5%; 
+  margin-left: 0.5%;
+  color: #ffffff;
+  margin-top: 0.75%;
+  text-align: center; /* Añadido para centrar el texto */
+  padding: 10px; /* Añadido para dar espacio alrededor del texto */
+}
+
+#title {
+  margin: 0; /* Añadido para quitar el margen predeterminado del h3 */
+}
+
+
+.Navvertical{
+  background-color: rgba(87, 128, 36, 255);
+  width: 20%;
+  height: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8%;
+  margin-left: 0.5%;
+  border-radius: 15px;
+
+}
+
+
+.dropdown-menu {
+  background-color: #3498db;
+  border: 1px solid #2980b9;
+}
+
+.dropdown-item {
+  color: #fff;
+}
+
+.dropdown-item:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+
+Toast.Body{
+  font-size: 1.5rem;
+}
 nav img {
   margin-left: 3%;
   margin: 1%;
@@ -21,12 +92,15 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(87, 128, 36, 255);
-  position: sticky;
+  position: sticky, fixed;
   top: 0;
+  
 }
 nav ul {
-  
   display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  
 }
 nav ul li {
   font-size: 1.5rem;
@@ -44,13 +118,43 @@ nav ul li a {
   transition: background-color 0.8s ease, color 0.8s ease;
 }
 
+#special{
+  margin: 0 0rem;
+  padding: 0rem;
+  color: black;
+}
+
+#special:hover {
+  background-color: initial;
+  color: initial; 
+  
+}
+/* Estilos para el Dropdown.Menu */
+.dropdown-menu {
+  background-color: #fff; /* Color de fondo del menú */
+  border: 1px solid #ccc; /* Borde del menú */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del menú */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+.dropdown-item {
+  color: #333; /* Color del texto en el menú */
+}
+
+.dropdown-item:hover {
+  background-color: #f0f0f0; /* Color de fondo al hacer hover */
+}
+
+
+
+
 nav ul li a:hover {
   background-color: #015e01;
   color: #9f9f9f;
 }
 
 nav .menu {
-  display: flex;
+  display: none;
   position: relative;
   top: 0.75rem;
   right: 0.5rem;
@@ -58,6 +162,7 @@ nav .menu {
   justify-content: space-between;
   width: 2.25rem;
   height: 2rem;
+
 }
 
 nav .menu span {
@@ -65,16 +170,19 @@ nav .menu span {
   width: 100%;
   background-attachment: #fff;
   border-radius: 0.2rem;
+  
 }
 
 .header {
   display: flex;
-  padding: 10px; /* Agrega un relleno alrededor de los elementos, si es necesario */
+  margin-bottom: 1%;
+  margin-top: 1%;
 }
 
 .header svg {
   display: none;
 }
+
 
 .log {
   color: #fff;
@@ -85,7 +193,22 @@ nav .menu span {
   transition: background-color 0.8s ease, color 0.8s ease;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1203px) {
+  nav ul li {
+    font-size: 1.2rem;
+    list-style: none;
+    margin: 0 10px;
+    white-space: nowrap;
+  }
+
+  .log{
+    font-size: 1.2rem;
+  }
+
+}
+/* CADA VEZ QUE SE CAMBIE EL TAMAÑO, TOCA AJUSTAR LA VARIABLE SetIsMobile EN EL NAVBAR */
+@media (max-width: 1050px) {
+  
   nav img {
     width: 45vw;
     margin-left: 60%;

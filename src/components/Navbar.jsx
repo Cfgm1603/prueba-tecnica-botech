@@ -10,7 +10,8 @@ const Navbar = () => {
   
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.matchMedia("(max-width: 950px)").matches);
+      
+      setIsMobile(window.matchMedia("(max-width: 1050px)").matches);
     };
     window.addEventListener("resize", handleResize);
     return () => {
@@ -54,15 +55,18 @@ const Navbar = () => {
           <Link to="/">Colegios</Link>
         </li>
         <li>
-          <Link to="/">Compañia</Link>
+          <Link to="/">Compañía</Link>
         </li>
         <li>
           {isMobile ? (
             <>
             <a className="account">
-                <LogoutButton className={menuOpen ? "" : "log"} />
                 <LoginButton className={menuOpen ? "" : "log"} />
+                <LogoutButton className={menuOpen ? "" : "log"} />
             </a>
+
+                
+            
             </>
             
           ) : (
@@ -74,7 +78,7 @@ const Navbar = () => {
           )}
         </li>
         <li>
-          <Link to="/">Comunicate con ventas</Link>
+          <Link to="/">Comunícate con ventas</Link>
         </li>
       </ul>
     </nav>
