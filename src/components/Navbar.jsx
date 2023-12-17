@@ -74,7 +74,6 @@ const Navbar = () => {
               <LogoutButton className={menuOpen ? "" : "log"} />
               <LoginButton className={menuOpen ? "" : "log"} />
             </>
-            
           )}
         </li>
         <li>
@@ -84,5 +83,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;
