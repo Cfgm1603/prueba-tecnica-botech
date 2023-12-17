@@ -52,10 +52,10 @@ const Navbar = () => {
           <Link to="/soluciones">Soluciones</Link>
         </li>
         <li>
-          <Link to="/">Colegios</Link>
+          <Link to="/colegios">Colegios</Link>
         </li>
         <li>
-          <Link to="/">Compañía</Link>
+          <Link to="/compania">Compañía</Link>
         </li>
         <li>
           {isMobile ? (
@@ -78,7 +78,7 @@ const Navbar = () => {
           )}
         </li>
         <li>
-          <Link to="/">Comunícate con ventas</Link>
+          <Link to="/ventas">Comunícate con ventas</Link>
         </li>
       </ul>
     </nav>
