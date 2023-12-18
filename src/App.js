@@ -10,6 +10,7 @@ import Ventas from "./pages/Ventas";
 
 function App() {
   return (
+    
     <Router>
       <div>
         <Routes>

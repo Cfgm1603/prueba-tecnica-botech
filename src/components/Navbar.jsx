@@ -62,18 +62,17 @@ const Navbar = () => {
             <>
               <a className="account">
                 <LoginButton className={menuOpen ? "" : "log"} />
-                <LogoutButton className={menuOpen ? "" : "log"} />
+                
               </a>
             </>
           ) : (
             <>
-              <LogoutButton className={menuOpen ? "" : "log"} />
               <LoginButton className={menuOpen ? "" : "log"} />
             </>
           )}
         </li>
         <li>
-          <Link to="/ventas">Comunícate con ventas</Link>
+          <button id="btnVentas" className="log"><Link  to="/ventas">  Comunícate con ventas</Link></button>
         </li>
       </ul>
     </nav>

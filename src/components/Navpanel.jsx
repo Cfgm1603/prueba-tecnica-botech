@@ -44,7 +44,7 @@ const Navpanel = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <Link to="/compania">Compañía</Link>
+          <Link >Mi cuenta</Link>
         </li>
         <li>
           {isMobile ? (

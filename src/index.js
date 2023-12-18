@@ -10,6 +10,7 @@ const client = "iepSCLtag2YwL9PEu0DWX0p8X1fzDnyJ";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <React.StrictMode>
       <Auth0Provider
       domain={domain}
