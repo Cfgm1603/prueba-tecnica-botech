@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import img from "../images/logo.png";
-import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
 
-const Navbar = () => {
+const Navpanel = () => {
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 767px)").matches
@@ -21,12 +20,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav>
+    <nav id="Navpanel">
       <div className="header">
-        <Link to="/">
-          {" "}
-          <img src={img} alt="logo" />
-        </Link>
         <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -49,34 +44,26 @@ const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <Link to="/soluciones">Soluciones</Link>
-        </li>
-        <li>
-          <Link to="/colegios">Colegios</Link>
-        </li>
-        <li>
           <Link to="/compania">Compañía</Link>
         </li>
         <li>
           {isMobile ? (
             <>
               <a className="account">
-                <LoginButton className={menuOpen ? "" : "log"} />
                 <LogoutButton className={menuOpen ? "" : "log"} />
               </a>
             </>
           ) : (
             <>
               <LogoutButton className={menuOpen ? "" : "log"} />
-              <LoginButton className={menuOpen ? "" : "log"} />
+              
             </>
           )}
         </li>
-        <li>
-          <Link to="/ventas">Comunícate con ventas</Link>
-        </li>
+        
       </ul>
     </nav>
   );
 };
-export default Navbar;
+
+export default Navpanel;
