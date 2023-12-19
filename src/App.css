@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
 }
-/*PRUEBA */
+  
 .sidenav {
   height: 100%;
   width: 0;
@@ -25,6 +25,35 @@
   background-color: rgb(61, 87, 27);
 }
 
+.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #00ff1a 0%,
+    #3d017e 27%,
+    #6704d0  67%,
+    #00ff1a 100%
+  );
+  
+  
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
 #btn-logout {
   background-color: rgb(61, 87, 27);
 }
@@ -33,6 +62,7 @@
   margin-top: 1%;
   margin-left: 5%;
   margin-right: 5%;
+  
 }
 
 .sidenav a {
@@ -128,6 +158,51 @@
   width: 27vw;
 }
 
+.imgIndividual{
+  height: 17rem;
+  width: 24rem;
+  border-radius: 15px;
+  display: flex;
+}.animate-charcter
+{
+   
+  background-image: linear-gradient(
+    -225deg,
+    #00ff1a 0%,
+    #3d017e 27%,
+    #6704d0  67%,
+    #00ff1a 100%
+  );
+  
+  
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 6s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+.contains{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30vw;
+}
+
+.textHome{
+  font-size: 1.5rem;
+  width: 100%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  line-height: 2rem;
+  height: 2rem;
+ 
+}
+
 .format {
   display: flex;
 
@@ -164,6 +239,7 @@
   justify-content: center;
   float: right;
   width: 80%;
+  
 }
 
 #insider{
@@ -404,7 +480,7 @@ nav .menu span {
   }
 
   nav ul.open {
-    margin: 0px 0px 0px -50px;
+    margin: 0px 0px 0px -30px;
     display: flex;
     max-width: 100%;
   }
@@ -484,15 +560,37 @@ nav .menu span {
   }
 
   #btnVentas.log {
-    padding: -1px;
+    padding: -px;
     margin: 0.2rem 0.5rem;
     border-radius: 10px;
     display: block;
     text-decoration: none;
     border-style: groove;
-    width: 97.7%;
+    width: 96%;
   }
 
+  .animate-charcter
+  {
+     
+    background-image: linear-gradient(
+      -225deg,
+      #00ff1a 0%,
+      #3d017e 27%,
+      #6704d0  67%,
+      #00ff1a 100%
+    );
+    
+    
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+    display: inline-block;
+        font-size: 22px;
+  }
   
 
   .container-form {
@@ -508,4 +606,22 @@ nav .menu span {
   .custom-select select {
     width: 30vw;
   }
+
+  .contains {
+    flex-direction: column; 
+    height: 110%;
+  }
+
+  .textHome {
+    margin-top: -10%;
+    line-height: -2%;
+  }
+
+  .imgIndividual {
+    margin-top: 18rem;
+    width: 20rem; /* Hacer la imagen ocupar el ancho completo en dispositivos móviles */
+    height: 170%; /* Ajustar altura automáticamente en dispositivos móviles */
+    margin-bottom: 2rem;
+  }
+
 }
