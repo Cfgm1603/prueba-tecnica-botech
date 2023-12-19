@@ -596,7 +596,7 @@ nav .menu span {
     display: block;
     text-decoration: none;
     border-style: groove;
-    width: 96%;
+    width: -webkit-fill-available;
   }
 
   .animate-charcter {
@@ -679,7 +679,7 @@ nav .menu span {
     margin-top: 1%;
     margin-left: 2%;
     margin-right: 0%;
-    width: 170%;
+    width: 100%;
   }
   .radioLabel {
     font-size: 1.2rem;
