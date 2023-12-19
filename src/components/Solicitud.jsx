@@ -6,7 +6,7 @@ const Solicitud = () => {
   const [periodo, setPeriodo] = useState("2024-1");
 
   return (
-    <div id="Solicitud">
+    <div id="Solicitud"  style={{display: "grid"}}>
       <div className="title-block">
         <h3 id="title">Solicitud de transporte escolar</h3>
       </div>

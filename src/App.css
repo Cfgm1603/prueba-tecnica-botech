@@ -103,7 +103,7 @@
 }
 
 #insideForms {
-  padding-top: 7vw;
+  margin-top: 2%;
   margin-left: 1%;
   margin-right: 1%;
   margin-bottom: 1%;
@@ -127,10 +127,11 @@
 }
 
 .passenger {
-  margin-top: 6.5vw;
+  margin-top: 1.5vw;
   border-style: groove;
   border-radius: 15px;
   margin: top;
+  
 }
 
 .radioLabel{
@@ -260,6 +261,7 @@
 
 #Solicitud {
   display: block;
+  
 }
 
 #Legal {
@@ -443,8 +445,20 @@ nav .menu span {
   border-radius: 1.1rem;
   transition: background-color 0.8s ease, color 0.8s ease;
 }
+@media (max-width: 1050px) {
+  
+
+  #Solicitud {
+    display: grid;
+    width: 151%;
+  }
+  
+}
+
 
 @media (max-width: 1203px) {
+
+  
   nav ul li {
     font-size: 1.2rem;
     list-style: none;
@@ -455,6 +469,11 @@ nav .menu span {
   .log {
     font-size: 1.2rem;
   }
+
+  #Solicitud {
+    display: grid;
+    width: 100%;
+  }
 }
 /* CADA VEZ QUE SE CAMBIE EL TAMAÑO, TOCA AJUSTAR LA VARIABLE SetIsMobile EN EL NAVBAR */
 @media (max-width: 1050px) {
@@ -463,6 +482,23 @@ nav .menu span {
     margin-left: 60%;
     margin-right: 50%;
   }
+  .title-block {
+    
+    
+    border-radius: 15px;
+    width: 70%;
+  
+    color: #ffffff;
+    margin-top: 0.75%;
+    text-align: center; /* Añadido para centrar el texto */
+    padding: 10px; /* Añadido para dar espacio alrededor del texto */
+  }
+  .container-form {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+  }
+  
 
   nav .menu {
     display: flex;
@@ -623,5 +659,44 @@ nav .menu span {
     height: 170%; /* Ajustar altura automáticamente en dispositivos móviles */
     margin-bottom: 2rem;
   }
+  
+  #Solicitud {
+    display: grid;
+    width: 100%;
+  }
 
+  #Navpanel{
+    width: 100%
+  }
+  .passenger{
+    width: 70%;
+  }
+  form {
+    width: 100;
+  }
+  #insideForms {
+    width: 70%;
+  }
+
+  #add{
+    width: 70%;
+  }
+  #insider{
+    width: 100%;
+  }
+  .container-page {
+    margin-top: 1%;
+    margin-left: 2%;
+    margin-right: 0%;
+    width: 170%;
+  }
+  .radioLabel{
+    font-size: 1.2rem;
+  }
+  h4{
+    height: 25px;
+  }
+  .component-panel{
+    width: 80%;
+  }
 }
