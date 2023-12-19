@@ -8,29 +8,28 @@
 }
 /*PRUEBA */
 .sidenav {
-  
-height: 100%;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   background-color: rgb(87, 128, 36);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s;
-  padding-top: 60px;
-  
+  padding-top: 50px;
+
   color: #ffffff;
 }
-#Navpanel{
+#Navpanel {
   background-color: rgb(61, 87, 27);
 }
 
-#btn-logout{
+#btn-logout {
   background-color: rgb(61, 87, 27);
 }
 
-.container-page{  
+.container-page {
   margin-top: 1%;
   margin-left: 5%;
   margin-right: 5%;
@@ -46,33 +45,102 @@ height: 100%;
   white-space: nowrap;
   border-bottom: 1px solid #ccc;
 }
+#dd {
+  background-color: #769376;
+}
 
-
-#imgCarousel{
+#imgCarousel {
   width: 40%;
   object-fit: cover;
 }
-#close{
+#close {
   border-bottom: 1px solid rgb(87, 128, 36);
 }
 
-#last{
+#last {
   border-bottom: 1px solid rgb(87, 128, 36);
 }
-#space-navbar{
+#space-navbar {
   margin-bottom: 410px;
 }
-#boton-navpanel{
+#boton-navpanel {
   font-size: 1.2rem;
   display: inline-block;
   padding: 2px 15px;
   border: 3px solid rgb(87, 128, 36);
   border-radius: 10px;
   cursor: pointer;
-  margin-left: -17px;
 }
 
-.component-panel{
+#insideForms {
+  padding-top: 7vw;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 1%;
+}
+.container-form {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-select {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  position: relative;
+  font-family: Arial;
+}
+.custom-select select {
+  width: 25vw; /*hide original SELECT element: */
+}
+.custom-select input {
+  width: 25vw; /*hide original SELECT element: */
+  height: 30px;
+}
+
+.passenger {
+  margin-top: 6.5vw;
+  border-style: groove;
+  border-radius: 15px;
+  margin: top;
+}
+
+.radioLabel{
+  font-size: 1.5rem;
+  display:flexbox;
+  justify-content: space-between;
+  
+}
+.alert{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.radioPick{
+  width: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+.pickerRadio{
+  display: flex;
+  justify-content: space-between;
+  width: 27vw;
+}
+
+.format {
+  display: flex;
+
+  width: 450px;
+}
+.periodo-escolar {
+  margin-right: 150px;
+}
+
+.format .right {
+  float: right;
+}
+.component-panel {
   width: 100%;
 }
 .sidenav a:hover {
@@ -88,8 +156,7 @@ height: 100%;
 }
 /*PRUEBA */
 
-
-.container-page-right{
+.container-page-right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -99,7 +166,14 @@ height: 100%;
   width: 80%;
 }
 
-.container-page-left{
+#insider{
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.container-page-left {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -108,39 +182,55 @@ height: 100%;
   width: 55%;
 }
 
-
-
-#Solicitud{
+#Solicitud {
   display: block;
 }
 
-#Legal{
+#Legal {
   display: none;
 }
 
-#Pagos{
+#Pagos {
   display: none;
 }
 
-#Tutoriales{
+#Tutoriales {
   display: none;
 }
-
 
 .title-block {
   float: right;
   background-color: rgba(87, 128, 36, 255);
   border-radius: 15px;
   width: 100%;
-  
+
   color: #ffffff;
   margin-top: 0.75%;
   text-align: center; /* Añadido para centrar el texto */
   padding: 10px; /* Añadido para dar espacio alrededor del texto */
 }
+#add {
+  float: right;
+  background-color: rgba(185, 193, 175, 0.537);
+  border-radius: 15px;
+  border-color: #000000;
+  border-style: groove;
+  width: 100%;
+  cursor: pointer;
+  color: #000000;
+  margin-top: 0.75%;
+  text-align: center; /* Añadido para centrar el texto */
+  padding: 10px;
+  transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+#add:hover {
+  background-color: rgba(143, 149, 135, 0.637);
+}
 
 #title {
-  margin: 0; /* Añadido para quitar el margen predeterminado del h3 */
+  margin: 0;
+  
 }
 
 .dropdown-menu {
@@ -157,7 +247,7 @@ height: 100%;
   color: #fff;
 }
 
-Toast.Body{
+Toast.Body {
   font-size: 1.5rem;
 }
 nav img {
@@ -169,8 +259,7 @@ nav img {
   margin-right: 2vw;
 }
 
-#imageDinamic{
-  
+#imageDinamic {
   margin: 1% auto;
   display: block;
   width: 75%;
@@ -185,13 +274,11 @@ nav {
   background-color: rgba(87, 128, 36, 255);
   position: sticky, fixed;
   top: 0;
-  
 }
 nav ul {
   display: flex;
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
-  
 }
 nav ul li {
   font-size: 1.5rem;
@@ -209,11 +296,11 @@ nav ul li a {
   transition: background-color 0.8s ease, color 0.8s ease;
 }
 
-#btnVentas{
+#btnVentas {
   padding: 0rem;
 }
 
-#special{
+#special {
   margin: 0 0rem;
   padding: 0rem;
   color: black;
@@ -221,8 +308,7 @@ nav ul li a {
 
 #special:hover {
   background-color: initial;
-  color: initial; 
-  
+  color: initial;
 }
 /* Estilos para el Dropdown.Menu */
 .dropdown-menu {
@@ -240,9 +326,6 @@ nav ul li a {
   background-color: #f0f0f0; /* Color de fondo al hacer hover */
 }
 
-
-
-
 nav ul li a:hover {
   background-color: #015e01;
   color: #9f9f9f;
@@ -257,7 +340,6 @@ nav .menu {
   justify-content: space-between;
   width: 2.25rem;
   height: 2rem;
-
 }
 
 nav .menu span {
@@ -265,7 +347,6 @@ nav .menu span {
   width: 100%;
   background-attachment: #fff;
   border-radius: 0.2rem;
-  
 }
 
 .header {
@@ -277,7 +358,6 @@ nav .menu span {
 .header svg {
   display: none;
 }
-
 
 .log {
   color: #fff;
@@ -296,14 +376,12 @@ nav .menu span {
     white-space: nowrap;
   }
 
-  .log{
+  .log {
     font-size: 1.2rem;
   }
-
 }
 /* CADA VEZ QUE SE CAMBIE EL TAMAÑO, TOCA AJUSTAR LA VARIABLE SetIsMobile EN EL NAVBAR */
 @media (max-width: 1050px) {
-  
   nav img {
     width: 45vw;
     margin-left: 60%;
@@ -312,12 +390,11 @@ nav .menu span {
 
   nav .menu {
     display: flex;
-    
   }
   nav {
     flex-direction: column;
-    justify-content: flex-end; 
-    align-items:normal;
+    justify-content: flex-end;
+    align-items: normal;
   }
   nav ul {
     display: none;
@@ -341,7 +418,6 @@ nav .menu span {
     margin: 0.2rem 0.5rem;
     background-color: #015e01;
     border-radius: 10px;
-
   }
 
   .header {
@@ -350,7 +426,6 @@ nav .menu span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
   }
 
   .header svg {
@@ -360,18 +435,18 @@ nav .menu span {
     cursor: pointer;
   }
 
-   .log{
+  .log {
     border: #015e01;
-    
+
     padding: 0;
   }
 
-  .account{
+  .account {
     border-color: #273dab;
     border-style: groove;
   }
 
-  .container-page-right{
+  .container-page-right {
     flex: 1;
     display: none;
     flex-direction: column;
@@ -380,10 +455,10 @@ nav .menu span {
     float: right;
     width: 100%;
   }
-  
-  .container-page-left{
+
+  .container-page-left {
     flex: 1;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -391,11 +466,11 @@ nav .menu span {
     position: relative;
   }
 
-  .Navvertical{
+  .Navvertical {
     background-color: rgba(87, 128, 36, 255);
     width: 100%;
     height: 18rem;
-    position:inherit;
+    position: inherit;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -404,11 +479,11 @@ nav .menu span {
     border-radius: 15px;
   }
 
-  #space-navbar{
+  #space-navbar {
     margin-bottom: 375px;
   }
 
-  #btnVentas.log{
+  #btnVentas.log {
     padding: -1px;
     margin: 0.2rem 0.5rem;
     border-radius: 10px;
@@ -416,7 +491,21 @@ nav .menu span {
     text-decoration: none;
     border-style: groove;
     width: 97.7%;
-    
   }
 
+  
+
+  .container-form {
+    display: flex;
+    justify-content: none;
+    flex-direction: column;
+  }
+
+  .format {
+    width: 345px;
+  }
+
+  .custom-select select {
+    width: 30vw;
+  }
 }

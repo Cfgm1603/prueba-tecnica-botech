@@ -8,13 +8,15 @@ function Home() {
     <>
       <Navbar />
       <Carousel />
-      
       <div className="container-page">
+        <div>
+             
+              <h3>TEHC SAS, revolucionando el transporte escolar desde 1983</h3>
 
+              <p>La respuesta integral para colegios y empresas, !Descubre nuestra revolución en movilidad educativa y corporativa</p>
+        </div>
         
-        <h1>My love</h1>
-
-        <p>Maria camila TE AMO</p>
+        
       </div>
     </>
   );

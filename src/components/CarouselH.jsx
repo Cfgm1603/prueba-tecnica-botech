@@ -9,7 +9,7 @@ function CarouselH() {
   return (
     <div style={{ display: 'block', width: "100%" }}> 
       <Carousel>
-        <Carousel.Item interval={4000}> 
+        <Carousel.Item interval={3000}> 
           <img 
             className="d-block"
             src={imgBus}
@@ -18,7 +18,7 @@ function CarouselH() {
             style={{ width: '100%', objectFit: 'cover' }}
           /> 
         </Carousel.Item> 
-        <Carousel.Item interval={4000}> 
+        <Carousel.Item interval={3000}> 
           <img 
             className="d-block"
             src={imgAsientos}
@@ -26,7 +26,7 @@ function CarouselH() {
             style={{ width: '100%', objectFit: 'cover' }}
           /> 
         </Carousel.Item> 
-        <Carousel.Item interval={4000}> 
+        <Carousel.Item interval={3000}> 
           <img 
             className="d-block"
             src={imgDuena}

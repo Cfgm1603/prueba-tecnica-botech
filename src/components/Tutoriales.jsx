@@ -1,9 +1,14 @@
 const Tutoriales = () => {
-  return (
-    <div className="title-block" id="Tutoriales">
+  return <div id="Tutoriales">
+    <div className="title-block">
       <h3 id="title">Tutoriales</h3>
-      <br></br>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+      
+    </div>
+    <br></br>
+    <p style={{textAlign: "justify"}}>
+
+    
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
       dapibus dictum dolor, quis vulputate massa. Suspendisse aliquam ornare
       elit in ullamcorper. Donec ornare a est ut luctus. Mauris convallis
       vulputate diam at hendrerit. Ut feugiat arcu eu dolor rhoncus, quis
@@ -22,7 +27,9 @@ const Tutoriales = () => {
       varius eu, faucibus et odio. Integer convallis enim sed tortor interdum, a
       luctus felis malesuada. Nulla laoreet eu massa quis posuere. Nullam eget
       ultrices mi. Praesent gravida efficitur nibh consectetur fermentum.
-    </div>
-  );
+    </p>
+      
+      </div>
+  
 };
 export default Tutoriales;
