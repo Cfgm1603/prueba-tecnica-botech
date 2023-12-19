@@ -10,9 +10,8 @@ import Ventas from "./pages/Ventas";
 
 function App() {
   return (
-    
     <Router>
-      <div >
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/soluciones" element={<Soluciones />} />

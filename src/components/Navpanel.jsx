@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import LogoutButton from "./LogoutButton";
 
 const Navpanel = () => {
-
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(
     window.matchMedia("(max-width: 767px)").matches
@@ -44,7 +43,7 @@ const Navpanel = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <Link >Mi cuenta</Link>
+          <Link>Mi cuenta</Link>
         </li>
         <li>
           {isMobile ? (
@@ -56,11 +55,9 @@ const Navpanel = () => {
           ) : (
             <>
               <LogoutButton className={menuOpen ? "" : "log"} />
-              
             </>
           )}
         </li>
-        
       </ul>
     </nav>
   );

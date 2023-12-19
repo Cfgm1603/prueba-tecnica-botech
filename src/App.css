@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
 }
-  
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -25,18 +25,15 @@
   background-color: rgb(61, 87, 27);
 }
 
-.animate-charcter
-{
-   
+.animate-charcter {
   background-image: linear-gradient(
     -225deg,
     #00ff1a 0%,
     #3d017e 27%,
-    #6704d0  67%,
+    #6704d0 67%,
     #00ff1a 100%
   );
-  
-  
+
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
@@ -45,7 +42,7 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 6s linear infinite;
   display: inline-block;
-      font-size: 25px;
+  font-size: 25px;
 }
 
 @keyframes textclip {
@@ -62,7 +59,6 @@
   margin-top: 1%;
   margin-left: 5%;
   margin-right: 5%;
-  
 }
 
 .sidenav a {
@@ -131,16 +127,14 @@
   border-style: groove;
   border-radius: 15px;
   margin: top;
-  
 }
 
-.radioLabel{
+.radioLabel {
   font-size: 1.5rem;
-  display:flexbox;
+  display: flexbox;
   justify-content: space-between;
-  
 }
-.alert{
+.alert {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -148,34 +142,32 @@
   justify-content: center;
 }
 
-.radioPick{
-  width: 1%;
+.radioPick {
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
-.pickerRadio{
+.pickerRadio {
   display: flex;
   justify-content: space-between;
   width: 27vw;
 }
 
-.imgIndividual{
+.imgIndividual {
   height: 17rem;
   width: 24rem;
   border-radius: 15px;
   display: flex;
-}.animate-charcter
-{
-   
+}
+.animate-charcter {
   background-image: linear-gradient(
     -225deg,
     #00ff1a 0%,
     #3d017e 27%,
-    #6704d0  67%,
+    #6704d0 67%,
     #00ff1a 100%
   );
-  
-  
+
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
@@ -184,24 +176,23 @@
   -webkit-text-fill-color: transparent;
   animation: textclip 6s linear infinite;
   display: inline-block;
-      font-size: 25px;
+  font-size: 25px;
 }
 
-.contains{
+.contains {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 30vw;
 }
 
-.textHome{
+.textHome {
   font-size: 1.5rem;
   width: 100%;
   margin-top: 1%;
   margin-bottom: 1%;
   line-height: 2rem;
   height: 2rem;
- 
 }
 
 .format {
@@ -240,10 +231,9 @@
   justify-content: center;
   float: right;
   width: 80%;
-  
 }
 
-#insider{
+#insider {
   margin-top: 1%;
   margin-bottom: 1%;
   margin-left: 1%;
@@ -261,7 +251,6 @@
 
 #Solicitud {
   display: block;
-  
 }
 
 #Legal {
@@ -299,6 +288,7 @@
   margin-top: 0.75%;
   text-align: center; /* Añadido para centrar el texto */
   padding: 10px;
+  margin-bottom: 5%;
   transition: background-color 0.8s ease, color 0.8s ease;
 }
 
@@ -308,7 +298,6 @@
 
 #title {
   margin: 0;
-  
 }
 
 .dropdown-menu {
@@ -446,19 +435,13 @@ nav .menu span {
   transition: background-color 0.8s ease, color 0.8s ease;
 }
 @media (max-width: 1050px) {
-  
-
   #Solicitud {
     display: grid;
     width: 151%;
   }
-  
 }
 
-
 @media (max-width: 1203px) {
-
-  
   nav ul li {
     font-size: 1.2rem;
     list-style: none;
@@ -474,6 +457,20 @@ nav .menu span {
     display: grid;
     width: 100%;
   }
+  #btn-logout {
+    background-color: #015e01;
+  }
+  .format {
+    justify-content: space-between;
+  }
+  .pickerRadio {
+    display: initial;
+    width: 80%;
+  }
+  label {
+    display: inline-block;
+    padding-right: 10px;
+  }
 }
 /* CADA VEZ QUE SE CAMBIE EL TAMAÑO, TOCA AJUSTAR LA VARIABLE SetIsMobile EN EL NAVBAR */
 @media (max-width: 1050px) {
@@ -483,11 +480,9 @@ nav .menu span {
     margin-right: 50%;
   }
   .title-block {
-    
-    
     border-radius: 15px;
     width: 70%;
-  
+
     color: #ffffff;
     margin-top: 0.75%;
     text-align: center; /* Añadido para centrar el texto */
@@ -498,7 +493,6 @@ nav .menu span {
     justify-content: space-between;
     width: 70%;
   }
-  
 
   nav .menu {
     display: flex;
@@ -605,18 +599,15 @@ nav .menu span {
     width: 96%;
   }
 
-  .animate-charcter
-  {
-     
+  .animate-charcter {
     background-image: linear-gradient(
       -225deg,
       #00ff1a 0%,
       #3d017e 27%,
-      #6704d0  67%,
+      #6704d0 67%,
       #00ff1a 100%
     );
-    
-    
+
     background-size: 200% auto;
     color: #fff;
     background-clip: text;
@@ -625,9 +616,8 @@ nav .menu span {
     -webkit-text-fill-color: transparent;
     animation: textclip 6s linear infinite;
     display: inline-block;
-        font-size: 22px;
+    font-size: 22px;
   }
-  
 
   .container-form {
     display: flex;
@@ -644,7 +634,7 @@ nav .menu span {
   }
 
   .contains {
-    flex-direction: column; 
+    flex-direction: column;
     height: 110%;
   }
 
@@ -659,17 +649,18 @@ nav .menu span {
     height: 170%; /* Ajustar altura automáticamente en dispositivos móviles */
     margin-bottom: 2rem;
   }
-  
+
   #Solicitud {
     display: grid;
     width: 100%;
   }
 
-  #Navpanel{
-    width: 100%
+  #Navpanel {
+    width: 100%;
   }
-  .passenger{
-    width: 70%;
+  .passenger {
+    width: 69%;
+    padding-right: 5px;
   }
   form {
     width: 100;
@@ -678,10 +669,10 @@ nav .menu span {
     width: 70%;
   }
 
-  #add{
+  #add {
     width: 70%;
   }
-  #insider{
+  #insider {
     width: 100%;
   }
   .container-page {
@@ -690,13 +681,13 @@ nav .menu span {
     margin-right: 0%;
     width: 170%;
   }
-  .radioLabel{
+  .radioLabel {
     font-size: 1.2rem;
   }
-  h4{
+  h4 {
     height: 25px;
   }
-  .component-panel{
+  .component-panel {
     width: 80%;
   }
 }

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Toast from 'react-bootstrap/Toast';
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Toast from "react-bootstrap/Toast";
 
 const Notification = () => {
   const [show, setShow] = useState(false);
@@ -10,7 +10,13 @@ const Notification = () => {
   return (
     <Row>
       <Col xs={6}>
-        <Toast onClose={() => setShow(false)} show={show} delay={3000} autohide position="top-end">
+        <Toast
+          onClose={() => setShow(false)}
+          show={show}
+          delay={3000}
+          autohide
+          position="top-end"
+        >
           <Toast.Header>
             <img
               src="holder.js/20x20?text=%20"
@@ -28,6 +34,6 @@ const Notification = () => {
       </Col>
     </Row>
   );
-}
+};
 
 export default Notification;

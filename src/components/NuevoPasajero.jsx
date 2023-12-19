@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 
 const NuevoPasajero = () => {
-  
   const [apellido, setApellido] = useState("");
   const [nombre, setNombre] = useState("");
   const [DireccionAM, setDireccionAM] = useState("");
@@ -25,7 +24,6 @@ const NuevoPasajero = () => {
     }
   };
 
-  
   return (
     <>
       <div className="title-block">
@@ -43,7 +41,10 @@ const NuevoPasajero = () => {
                       <input
                         type="text"
                         value={apellido}
-                        onChange={(e) => {handleChange(e); setApellido(e.target.value)}}
+                        onChange={(e) => {
+                          handleChange(e);
+                          setApellido(e.target.value);
+                        }}
                         onKeyDown={(e) => handleKeyDown(e)}
                       />
                     </div>
@@ -56,7 +57,10 @@ const NuevoPasajero = () => {
                       <input
                         type="text"
                         value={nombre}
-                        onChange={(e) => {handleChange(e); setNombre(e.target.value)}}
+                        onChange={(e) => {
+                          handleChange(e);
+                          setNombre(e.target.value);
+                        }}
                         onKeyDown={(e) => handleKeyDown(e)}
                       />
                     </div>
@@ -64,10 +68,9 @@ const NuevoPasajero = () => {
                 </div>
               </div>
               <div className="alert">
-              
                 {error && (
                   <span style={{ color: "red" }}>
-                     <h4> No se permiten números ni caracteres especiales. </h4>
+                    <h4> No se permiten números ni caracteres especiales. </h4>
                   </span>
                 )}
               </div>
@@ -109,16 +112,19 @@ const NuevoPasajero = () => {
                     Tipo de vivienda
                   </h4>
                 </div>
-                <div className="radioPick"></div>
-                <label className="radioLabel">
-                  Casa&nbsp;&nbsp;
-                  <input type="radio" name="myRadio" value="Casa" />
-                </label>
-                <h2 style={{ whiteSpace: "nowrap", paddingBottom: "7%" }}>|</h2>
-                <label className="radioLabel">
-                  Apartamento&nbsp;&nbsp;
-                  <input type="radio" name="myRadio" value="Apartamento" />
-                </label>
+                <div className="radioPick">
+                  <label className="radioLabel">
+                    Casa&nbsp;&nbsp;
+                    <input type="radio" name="myRadio" value="Casa" />
+                  </label>
+                  <h2 style={{ whiteSpace: "nowrap", paddingBottom: "7%" }}>
+                    |
+                  </h2>
+                  <label className="radioLabel">
+                    Apartamento&nbsp;&nbsp;
+                    <input type="radio" name="myRadio" value="Apartamento" />
+                  </label>
+                </div>
               </div>
             </div>
             <div className="bottom">
@@ -158,18 +164,20 @@ const NuevoPasajero = () => {
                     Tipo de vivienda
                   </h4>
                 </div>
-                <div className="radioPick"></div>
-                <label className="radioLabel">
-                  Casa&nbsp;&nbsp;
-                  <input type="radio" name="myRadio" value="Casa" />
-                </label>
-                <h2 style={{ whiteSpace: "nowrap", paddingBottom: "7%" }}>|</h2>
-                <label className="radioLabel">
-                  Apartamento&nbsp;&nbsp;
-                  <input type="radio" name="myRadio" value="Apartamento" />
-                </label>
+                <div className="radioPick">
+                  <label className="radioLabel">
+                    Casa&nbsp;&nbsp;
+                    <input type="radio" name="myRadio" value="Casa" />
+                  </label>
+                  <h2 style={{ whiteSpace: "nowrap", paddingBottom: "7%" }}>
+                    |
+                  </h2>
+                  <label className="radioLabel">
+                    Apartamento&nbsp;&nbsp;
+                    <input type="radio" name="myRadio" value="Apartamento" />
+                  </label>
+                </div>
               </div>
-             
             </div>
           </form>
         </div>

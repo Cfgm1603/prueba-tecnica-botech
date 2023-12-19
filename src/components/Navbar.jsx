@@ -62,7 +62,6 @@ const Navbar = () => {
             <>
               <a className="account">
                 <LoginButton className={menuOpen ? "" : "log"} />
-                
               </a>
             </>
           ) : (
@@ -72,7 +71,9 @@ const Navbar = () => {
           )}
         </li>
         <li>
-          <button id="btnVentas" className="log"><Link  to="/ventas">  Comunícate con ventas</Link></button>
+          <button id="btnVentas" className="log">
+            <Link to="/ventas"> Comunícate con ventas</Link>
+          </button>
         </li>
       </ul>
     </nav>
