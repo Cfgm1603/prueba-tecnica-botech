@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const NuevoPasajero = () => {
+const NuevoPasajero = ({ numeroPasajero, onRecogerDatos })=> {
   const [apellido, setApellido] = useState("");
   const [nombre, setNombre] = useState("");
   const [DireccionAM, setDireccionAM] = useState("");
@@ -24,10 +24,26 @@ const NuevoPasajero = () => {
     }
   };
 
+  const handleRecogerDatos = () => {
+    // Recolecta los datos del pasajero
+    const datosPasajero = {
+      apellido,
+      nombre,
+      DireccionAM,
+      barrioAM,
+      direccionPM,
+      barrioPM
+    };
+
+    onRecogerDatos(numeroPasajero, datosPasajero);
+
+  };
+
+
   return (
     <>
       <div className="title-block">
-        <h3 id="title">Datos pasajero 1</h3>
+        <h3 id="title">Datos pasajero {numeroPasajero}</h3>
       </div>
       <div className="passenger">
         <div id="insider">
@@ -151,7 +167,7 @@ const NuevoPasajero = () => {
                         style={{ marginLeft: "2.1vw" }}
                         type="text"
                         value={barrioPM}
-                        onChange={(e) => setBarrioPM(e.target.value)}
+                        onChange={(e) => {setBarrioPM(e.target.value); handleRecogerDatos();}}
                       />
                     </div>
                   </label>
